@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">BugBug - a Po-op Game</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/BugBugGameplay.png" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        This is a game I made with 11 other people where the focus was on making a fun game and improving our skills. 
+                        This is a chaotic 2-player co-op game (can be played solo as well) where the players need to communicate and work 
+                        together to steer a dungball through different levels. There are 7 levels, each getting more difficult with new enemy 
+                        encounters and more difficult terrain. Some levels even add more features to the dungball such as a shield.
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Local co-op support</li>
+                            <li>FMOD sound/music support</li>
+                            <li>Effect system</li>
+                            <li>Physics based movement</li>
+                            <li>Screen indicators</li>
+                            <li>UI and options systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--About mechanic 1x-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Local co-op support</h2>
+                    <p class="aboutMechanic-text">
+                        I'm really proud of the implementation that handles multiple players by using Unity’s new input system. When a player joins a new input object 
+                        is created which is connected to a controller. This object only handles input and isn’t destroyed when switching scenes. When a scene is loaded 
+                        the actual player objects for that scene are connected to a specific input object. 
+                        In the player menu the player can change the color of their bug and the same strategy is used here, by connecting the menu to the input object.
+                    </p>
+                </div>
+
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Effect system</h2>
+                    <p class="aboutMechanic-text">
+                        The effect system has a high level of abstraction by having all effects inherit from a base class which is the only thing the effect system knows about. 
+                        The only thing the effect system does is activate and deactivate effects without caring about what the effect is. 
+                        There are 5 different effects that affect the dungball in different ways, for example taking tick damage or making the ball slide more on ice.
+                    </p>
+                </div>
+                
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">FMOD</h2>
+                    <p class="aboutMechanic-text">
+                        This was my first time using a different sound engine than the one Unity is provided with. 
+                        I learned a lot on how to implement FMOD for both sound effects and music, I also learned a little about how FMOD Studio works.
+                    </p>
+                </div>
+
+                <div class="links-container">
+                    <h2 class="subsectionTitle">Links</h2>
+    
+                    <div class="links-item-container">
+                        <a href="https://alltimefelix.itch.io/bugbug-a-po-op-game" class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/itchio.svg" class="link-item-image" style="max-width: 6.5rem; max-height: 6.5rem;">
+                                <h3>Itch</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

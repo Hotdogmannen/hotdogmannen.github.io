@@ -1,0 +1,119 @@
+/*Main*/
+.main-container
+{
+    background-color: var(--light-grey); 
+    width: 80%; 
+    margin: auto; 
+    border-radius: 
+    1rem; overflow: hidden;
+}
+/*Main*/
+
+/*Project*/
+
+.projectTitle
+{
+    color: var(--red);
+    text-align: center;
+}
+
+.projectImage-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.projectImage
+{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-height: 35rem;
+}
+
+/*Project*/
+
+/*About Project*/
+
+.aboutProject-container
+{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.aboutProject-text
+{
+    margin: 0 4rem 2rem 4rem; 
+    font-size: 1vw;
+}
+
+/*About Project*/
+
+/*Highlights*/
+
+.highlights-container
+{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.highlights-list
+{
+    color: var(--default-text-color); 
+    font-size: 1vw; 
+    text-align: left;
+}
+
+/*Highlights*/
+
+/*About Mechanic*/
+.aboutMechanic-container
+{
+    text-align: center; 
+    margin-bottom: 5rem;
+}
+
+.aboutMechanic-text
+{
+    margin: 0 4rem 0rem 4rem; 
+    font-size: 1vw;
+}
+/*About Mechanic*/
+
+/*Links*/
+.links-container
+{
+    text-align: center; 
+    margin-bottom: 5rem;
+}
+
+.links-item-container
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.link-item
+{
+    text-decoration-color: var(--dark-red); 
+    margin: 1rem;
+}
+
+.link-item-image
+{
+    height: auto; 
+    width: auto; 
+    max-width: 6rem; 
+    max-height: 6rem;
+}
+/*Links*/
+
+/*Other*/
+
+.subsectionTitle
+{
+    color: var(--red);
+    text-align: center;
+}
+
+/*Other*/

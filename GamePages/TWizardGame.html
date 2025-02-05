@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">TWIZARD GOAP & Dungeon Generation</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/TwizardGameplay.PNG" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        I made this little game to learn more about AI, specifically for enemies and dungeon generation. 
+                        I also wanted to challenge myself by designing the game and creating all the assets on my own. 
+                        You play as a wizard going through rooms defeating monsters trying to find the way to the next floor. 
+                        Your objective is to get through as many floors as possible but every floor gets harder and harder. 
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Goal Oriented Action Planning (GOAP)</li>
+                            <li>A* Pathfinding</li>
+                            <li>Dungeon Generation</li>
+                            <li>Player Movement</li>
+                            <li>Player Shooting</li>
+                        </ul>
+                        <p style="font-size: 1vw;">Besides programming</p>
+                        <ul class="highlights-list">
+                            <li>Pixel art</li>
+                            <li>2D Animation</li>
+                            <li>Tilemaps</li>
+                            <li>Particles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--About mechanic 1x-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Dungeon Generation</h2>
+                    <p class="aboutMechanic-text">
+                        The rooms are premade leading to a lot of control over the rooms, the algorithm places rooms randomly inside an area. 
+                        After the rooms have been placed, the algorithm starts to connect doorways with hallways so that every room is accessible 
+                        and finally finds the room farthest from the starting room and connects an end room.
+                    </p>
+                </div>
+
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Goal Oriented Action Planning</h2>
+                    <p class="aboutMechanic-text">
+                        An AI technique I had heard of was Goal Oriented Action Planning, instead of using a finite state machine, 
+                        you give the enemy some goals and then actions it can take to achieve those aforementioned goals. This made
+                         it really easy to create new enemies and I wouldn't have to maintain any complex state machines but it could lead to unpredictable behavior. 
+                         For performance sake i used A* pathfinding to find which actions to perform in order to achieve the goal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

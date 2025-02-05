@@ -1,0 +1,130 @@
+/*Project*/
+
+.grid-container
+{
+    display: flex;
+    justify-content:space-around;
+    
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.grid-item
+{
+    flex-shrink: 50%;
+    width: 35rem;
+    height: 35rem;
+
+    position: relative;
+    overflow: hidden;
+    background-color: var(--light-grey);
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0rem;
+
+    margin: 2rem 0.5rem;
+
+    transition: 100ms;
+}
+
+.grid-item:hover
+{
+    transform: scale(1.01);
+    transition: 100ms;
+}
+
+.grid-item:active
+{
+    transform: scale(1.05) rotate(2deg);
+    transition: 50ms;
+}
+
+.grid-item-info
+{
+    position: absolute;
+    width: 100%;
+
+    margin-top: 2rem;
+    
+    h1
+    {
+        font-weight: bold;
+        color: var(--red);
+    }
+
+    p
+    {
+        font-size: 1.3em;
+
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        overflow:auto;
+    }
+}
+
+.grid-item img
+{
+    position: absolute;
+    max-width: 42em;
+    max-height: 42em;
+
+    bottom: 16rem;
+
+    display: block;
+}
+
+.grid-item-overlay-info
+{
+    position: absolute;
+    width: 100%;
+    bottom: 16rem;
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    background-color: var(--dark-red-transparent);
+    p
+    {
+        margin: auto;
+    }
+}
+
+/*Project*/
+
+/*About*/
+
+.about_container
+{
+    min-height: 20rem;
+
+    background-color: var(--light-grey);
+    display: flex;
+    width: 80%;
+    justify-content:flex-start;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+
+    img
+    {
+        margin: 1rem;
+        border-radius: 100%;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    h1
+    {
+        color: var(--red);
+        margin-left: 5rem;
+    }
+}
+
+/*About*/

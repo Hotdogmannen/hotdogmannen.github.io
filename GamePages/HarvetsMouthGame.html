@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">Harvest Mouth</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/HarvestMouthGameplay.PNG" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        This was made during a 48 hour game jam with 4 other people, for this jam the theme was harvest. 
+                        You're a hamster who works at a mortuary and steals organs and puts them in your cheeks. 
+                        These organs aren't easy to get out so different tools need to be used, just make sure you don’t 
+                        get caught in the act since the supervisor has a close eye on you.
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Mini-games</li>
+                            <li>UI systems</li>
+                        </ul>
+                        <p style="font-size: 1vw;">Besides programming</p>
+                        <ul class="highlights-list">
+                            <li>Level Design</li>
+                            <li>Particles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--About mechanic 1x-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Mini-games</h2>
+                    <p class="aboutMechanic-text">
+                        Similar to how easy it was to add effects to BugBug’s effect system, I wanted to be able to add mini-games easily. 
+                        That's why I decided to support adding mini-games throughout development by making a base class for all mini-games, 
+                        they only needed to be inherited by the base class and they would automatically work. Only the mini-game had to be 
+                        implemented since both the base class and other systems handled the rest like what would happen after losing or winning 
+                        the mini-game. In total I created 5 out of 6 mini-games which took up most of the time for this game jam.
+                    </p>
+                </div>
+
+                <div class="links-container">
+                    <h2 class="subsectionTitle">Links</h2>
+    
+                    <div class="links-item-container">
+                        <a href="https://github.com/Flippers17/GameJamHost2024 " class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/github.svg" class="link-item-image">
+                                <h3>Github</h3>
+                            </div>
+                        </a>
+                        
+                        <a href="https://narvl.itch.io/harvest-mouth" class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/itchio.svg" class="link-item-image" style="max-width: 6.5rem; max-height: 6.5rem;">
+                                <h3>Itch</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

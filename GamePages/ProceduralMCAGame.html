@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">Marching Cube Terrain Generation</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/MarchingCubeTerrain.png" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        Procedural terrain generator that I made using the marching cube algorithm and perlin noise. 
+                        The goal of this project was to learn more about terrain generation, destructible terrain and how to optimize them. 
+                        In this project an infinite world is generated around the player using a chunk system. The terrain can be modified by breaking or placing blocks.
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Marching Cubes</li>
+                            <li>Procedural Generation</li>
+                            <li>Perlin Noise</li>
+                            <li>Chunk system</li>
+                            <li>Unity Jobs System</li>
+                            <li>Unity Burst Compiler</li>
+                            <li>Object Pooling</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--About mechanic 1x-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Procedural Generation</h2>
+                    <p class="aboutMechanic-text">
+                        The generation is infinite in all axes by using a chunk system to split the terrain into different meshes. 
+                        I used perlin noise with multiple octaves for the terrain data and by using the marching cube algorithm the 
+                        terrain could easily be made modifiable letting the player both place and destroy blocks. 
+                        The marching cube algorithm has no smoothing leading to the sharp edges which i think looks really cool (:
+                    </p>
+                </div>
+
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Optimizations</h2>
+                    <p class="aboutMechanic-text">
+                        To optimize the generation, multithreading was used through Unity Jobs and to further improve performance the burst compiler was used. 
+                        This made a huge difference to performance going from ~140ms to load in 64 chunks to ~6ms. The second performance problem was garbage collection, 
+                        to fix this I used object pooling for the chunks. That made most of the problem disappear leaving the generation with no big stutters when loading in terrain. 
+                        Next step is to implement octrees for chunks so that the marching cube algorithm doesn't waste its time going through completely empty/filled chunks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

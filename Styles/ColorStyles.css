@@ -1,0 +1,14 @@
+:root
+{
+    --default-text-color: #ffffff;
+    --default-text-font: Verdana, Geneva, Tahoma, sans-serif;
+
+    --light-red: #d65353;
+    --red: #bb4747;
+    --dark-red: #863333;
+
+    --dark-red-transparent: #201212ea;
+
+    --light-grey: #353535;
+    --dark-grey: #202020;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="Styles/IndexStylesheet.css">
+        <link rel="stylesheet" href="Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <!--Projects-->
+        <div style="padding-top: 10rem;" id="projects">
+            <div class="grid-container">
+                <button onclick="document.location='GamePages/ProceduralMCAGame.html'" class="grid-item">
+                    <img src="res/Images/MarchingCubeTerrainSquare.png">
+                    <div class="grid-item-overlay-info"><p>4 weeks | Unity | C# | 3D</p></div>
+                    <div class="grid-item-info">
+                        <h1>Marching Cube Terrain Generation</h1>
+                        <p>
+                            Procedural terrain generator that I made using the marching cube algorithm and perlin noise. 
+                        </p>
+                    </div>
+                </button>
+                <button onclick="document.location='GamePages/BugBugGame.html'" class="grid-item">
+                    <img src="res/Images/BugBugBackground.png">
+                    <div class="grid-item-overlay-info"><p>6 weeks | Unity | C# | 3D</p></div>
+                    <div class="grid-item-info">
+                        <h1>BugBug - a Po-op Game</h1>
+                        <p>
+                            This is a game I made with 11 other people where the focus was on making a fun game and improving our skills.
+                        </p>
+                    </div>
+                </button>
+                <button onclick="document.location='GamePages/HarvetsMouthGame.html'" class="grid-item">
+                    <img src="res/Images/HarvestMouthBackground.png">
+                    <div class="grid-item-overlay-info"><p>48 hours | Unity | C# | 3D | Game Jam</p></div>
+                    <div class="grid-item-info">
+                        <h1>Harvest Mouth</h1>
+                        <p>
+                            This was made during a 48 hour game jam with 4 other people, for this jam the theme was harvest.
+                        </p>
+                    </div>
+                </button>
+                <button onclick="document.location='GamePages/TWizardGame.html'" class="grid-item">
+                    <img src="res/Images/TwizardLogo.PNG">
+                    <div class="grid-item-overlay-info"><p>8 weeks | Unity | C# | 2D</p></div>
+                    <div class="grid-item-info">
+                        <h1>TWIZARD GOAP & Dungeon Generation</h1>
+                        <p>
+                            I made this little game all by myself to learn more about AI, specifically for enemies and dungeon generation. 
+                        </p>
+                    </div>
+                </button>
+                <button href="#" class="grid-item">
+                    <img src="res/Images/ThisWebsite.png">
+                    <div class="grid-item-overlay-info"><p>Time | HTML | CSS</p></div>
+                    <div class="grid-item-info">
+                        <h1>This Website</h1>
+                        <p>
+                            Yep, I made this using HTML and CSS.
+                        </p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!--About Me-->
+        <div style="padding-top: 6rem;" id="about">
+            <div class="about_container">
+                <img src="res/Images/ItsMe.png">
+                <div>
+                    <h1>About Me</h1>
+                    <p style="margin: 2rem 5rem 2rem 5rem; overflow: visible; font-size: 1vw;">
+                        Hello! My name is Viktor, a game programmer with serval other skills within game development and
+                        I'm currently studying my last semester at the University of Skövde. I've been instressted in game development 
+                        since I was 10 years old and that fire is still burning strong, I love solving problems and learning more about 
+                        programming and game development in general. Keeping code clean and performant is something I always strive for 
+                        but I might have a hard time giving up on a problem until i solve it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="res/Images/icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="res/Images/icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
