@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">You Oar Me</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/YouOarMeGameplay.png" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        During this game jam my group of 3 people decided to only use software we had no experience with, for me that meant using Godot for the first time. 
+                        We really wanted to challenge ourselves but also learn more during this jam so that’s why we made the decision. 
+                        It was really hard in the beginning but after just a couple of hours we got the hang of it and created this game. 
+                        This time the theme was “You or me” so we decided to make a racing game where you steer a boat and try to get to the finish line before the ghost boat does. 
+                        The twist is that the lap gets saved every time someone reaches the goal, this lap is then used for the ghost boat the next time someone plays the game.
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Json</li>
+                            <li>Enemy</li>
+                            <li>UI</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--About Ghost Boat-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Ghost Boat</h2>
+                    <p class="aboutMechanic-text">
+                        The ghost boat is the player's enemy, it uses the fastest lap out of any player and if a player is faster than the ghost boat then that lap gets saved. 
+                        This is done by saving the player position every second or so to a list. When a player reaches the goal and their time was faster than the ghost 
+                        boat then the list of positions along with the lap time gets serialized to a file using Json. The ghost boat can then load the positions and 
+                        lerp between the points to recreate the path that the player took.
+                    </p>
+                </div>
+
+                <!--Links/View At-->
+                <div class="links-container">
+                    <h2 class="subsectionTitle">Links</h2>
+
+                    <div class="links-item-container">
+                        <a href="https://github.com/Hotdogmannen/agesgamejamspring2025" class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/github.svg" class="link-item-image" target="_blank">
+                                <h3>Github</h3>
+                            </div>
+                        </a>
+    
+                        <a href="https://hotdogmannen.itch.io/you-oar-me" class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/itchio.svg" class="link-item-image" target="_blank" style="max-width: 6.5rem; max-height: 6.5rem;">
+                                <h3>Itch</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/Icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/Icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Viktor Andersson</title>
+        <link rel="icon" href="../res/Images/Icons/WebsiteIcon.png">
+        <link rel="stylesheet" href="../Styles/MainStylesheet.css">
+        <link rel="stylesheet" href="../Styles/GameStylesheet.css">
+        <link rel="stylesheet" href="../Styles/ColorStyles.css">
+    </head>
+
+    <body>
+        <!--Header-->
+        <header class="navbar">
+            <a href="../index.html" class="navbarTitle"><p>Viktor Andersson</p></a>
+            <a href="../index.html#projects" class="navbarItem"><p>Projects</p></a>
+            <a href="../index.html#about" class="navbarItem"><p>About</p></a>
+            <a href="#contact" class="navbarItem"><p>Contact</p></a>
+            <a href="#" target="_blank" class="navbarSpecialItem"><p>Resume</p></a>
+            <a href="https://github.com/Hotdogmannen" target="_blank" class="navbarSpecialItem"><img src="../res/Images/Icons/github.svg" alt="Github"></a>
+        </header>
+
+        <!--Main-->
+        <div style="padding-top: 10rem;">
+            <div class="main-container">
+                
+                <!--Project name and picture-->
+                <h1 class="projectTitle">Chit Chat</h1>
+                <div class="projectImage-container">
+                    <img src="../res/Images/ChitChatEditor.jpg" class="projectImage">
+                </div>
+                
+                <!--About Project-->
+                <div class="aboutProject-container">
+                    <h2 class="subsectionTitle">About Project</h2>
+                    <p class="aboutProject-text">
+                        This is a tool I made in the S&box game engine to get a better understanding of how the editor side of the engine worked. 
+                        I started using this engine to better my knowledge on other game engines and have some good ol’ F. U. N. 
+                        I wanted to create an easy to use dialogue system where no code was needed to use it (except for UI as the engine only supports creating it in code). 
+                        This meant creating an editor from which the user can make the dialogue and I also had to create the systems that runs the dialogue during runtime. 
+                        I learnt a lot about the engine and more importantly how to dig through engine code to find out how things worked as there isn’t much documentation 
+                        on the editor side of things. 
+                    </p>
+                </div>
+
+                <!--Highlights-->
+                <div class="highlights-container">
+                    <h2 class="subsectionTitle">Highlights</h2>
+                    <div style="display: inline-block;">
+                        <ul class="highlights-list">
+                            <li>Custom Editor</li>
+                            <li>Dialogue System</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--About Dialogue System-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Dialogue System</h2>
+                    <p class="aboutMechanic-text">
+                        Chit Chat is a stack based dialogue system which means that the dialogue data is built up from a stack of actions. 
+                        There are 3 different actions the user can choose from, these are the speak, event and choice action. The speak action is
+                        used for when a character is speaking (duh) and has options to add a writing effect, character picture as well as sounds. 
+                        The event action is used to send an event from dialogue to objects in the scene. And lastly the choice action is used to add 
+                        choices to the player that can lead to other dialogue. The actions use a base class that implements a simple function that passes 
+                        in all systems a dialogue action can use, this means that no casting is necessary and new actions can easily be implemented.
+                    </p>
+                </div>
+
+                <!--About Custom Editor-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">Custom Editor</h2>
+                    <p class="aboutMechanic-text">
+                        The editor for Chit Chat is built up from 3 windows, these are the dialogue selector, dialogue inspector and the templates window. 
+                        The dialogue selector is where the user adds or removes actions and also selects them. When an action is selected the dialogue inspector 
+                        will show the different options for that action. The template window is used to set templates for the different actions, it’s like the default state of an action. 
+                    </p>
+                </div>
+                
+                <!--About Custom Editor-->
+                <div class="aboutMechanic-container">
+                    <h2 class="subsectionTitle">QoL</h2>
+                    <p class="aboutMechanic-text">
+                        A tool's usability is really important, making sure it's easy to learn and use had me drawing tons in paint. 
+                        Something I added to make Chit Chat easier to use was the template window as I wanted the user to have control over the default 
+                        state of actions as the one I created isn’t going to work for everyone. I also made examples and guides on how to use the tool making 
+                        it easier for someone to use it. I even created a built-in UI that can be used or modified but most importantly something the user can 
+                        reference when making their own UI. 
+                    </p>
+                </div>
+                
+                <!--Links/View At-->
+                <div class="links-container">
+                    <h2 class="subsectionTitle">Links</h2>
+
+                    <div class="links-item-container">
+                        <a href="https://sbox.game/hotpot/chitchat" class="link-item" target="_blank">
+                            <div>
+                                <img src="../res/Images/Icons/sbox.svg" class="link-item-image" target="_blank" style="min-width: 6rem; min-height: 6rem;">
+                                <h3>S&box</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-container" id="contact" style="margin-top: 8rem;">
+            <div>
+                <h1>Contact Me!</h1>
+                <br>
+                <div>
+                    <a class="footer-icon" href="mailto:viktor.andersson4193@gmail.com"><img src="../res/Images/Icons/mail.png" alt="Mail"></a>
+                    <a class="footer-icon" href="https://www.linkedin.com/in/viktor-andersson-74a002316/" target="_blank"><img src="../res/Images/Icons/linkedin.png" alt="linked in"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
